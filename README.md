@@ -1,7 +1,6 @@
 # rato-catastrofico
 
 LOGIN
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,37 +8,39 @@ LOGIN
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apreciadores de passarinhos</title>
-    <link rel="icon" type="image/png" href="/casal-de-passarinhos-cambacica-cod-858-madrinha.jpg"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Login</h1> <br>
-    <form action="pag1.html">
+   <div class="container"> <h1>Login</h1> <br>
+    <form action="pagina1.html">
     <label>Usuário:</label><br>
     <input type="text" id="fname" name="fname" placeholder="nome"><br>
     <label>Senha:</label><br>
     <input type="password" id="lname" name="pwd" placeholder="password"> <br>
     <input type="submit" value="login">
   </form> <br><br>
+    </div>
 </body>
 </html>
 
 PAGINA 1
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="pag2.html">
+    <div class="container">
+    <form action="pagina2.html">
         <label for="fname">Nome Completo:</label><br>
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Endereço:</label><br>
         <input type="text" id="lname" name="lname">
-      </form> <br>
+       <br>
       <label for="Estado">Estado do Brasil (UF):</label> <br>
       <select name="Estado" id="Estado">
         <option value="-">-</option>
@@ -73,23 +74,67 @@ PAGINA 1
         <option value="EX">Estrangeiro</option>
       </select> <br>
       <input type="submit" value="login"> <br> <br>
+      </form>
       <button><a href="http://127.0.0.1:5500/index.html">Voltar</a></button> <br><br>
+    </div>
 </body>
 </html>
 
-PAGINA 2
 
+PAGINA 2
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="/Imagens/Etec Logo.png" alt="Logo Etec" width="60%" height="60%"> <br> <br>
-    <button><a href="http://127.0.0.1:5500/pag1.html">Voltar</a></button> <br><br>
-    <button><a href="http://127.0.0.1:5500/index.html">Inicio</a></button>
+    <div class="logo">
+    <img src="/imagens/LOGOetec.png" alt="Logo Etec" width="30%" height="30%" > <br> <br>
+    <div class="button">
+    <button><a href="http://127.0.0.1:5500/pagina1.html">Voltar</a></button> <br><br>
+    <button><a href="http://127.0.0.1:5500/index.html">Inicio</a></button></div>
+</div>
 </body>
 </html>
+
+CSS
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-color: lightblue;
+    font-family:'Times New Roman', Times, serif;
+}
+input text {
+    width: 10%;
+    padding: 10px;
+    border:1px solid blue;
+    border-radius: 5px;
+}
+select {
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.container {
+   border-style: inset;
+   border-width: 100px;
+   border-color:darkgray;
+    background-color: white;
+}
+.logo{
+position: relative;
+top: 100px;
+}
+.button {
+    color: black;
+}
