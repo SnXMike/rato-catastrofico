@@ -1,6 +1,55 @@
-# rato-catastrofico
+Exemplos da Aula 
 
-LOGIN
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        div {
+            background-color:rgb(100, 167, 0);
+            border: solid 1px black;
+        }
+        .flex-container {
+            display: flex;
+            background-color: rgb(66, 66, 66);
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            flex-direction:column;
+            flex-wrap:wrap;
+        }
+        .item {
+            height: 50px;
+            width: 250px;
+            flex-basis: 100px;
+            text-align: center;
+        }
+        .item2 {
+            background-color: blue;
+            height: 50px;
+            width: 250px;
+            flex-basis: 100px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    
+</body>
+</html>
+
+Login 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +69,12 @@ LOGIN
     <input type="submit" value="login">
   </form> <br><br>
     </div>
+    <button><a href="http://127.0.0.1:5500/exemplo.html">p/ exemplo</a></button>
 </body>
 </html>
 
-PAGINA 1
+Endereço 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -80,8 +131,8 @@ PAGINA 1
 </body>
 </html>
 
+Logo Etec
 
-PAGINA 2
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -93,7 +144,7 @@ PAGINA 2
 </head>
 <body>
     <div class="logo">
-    <img src="/imagens/LOGOetec.png" alt="Logo Etec" width="30%" height="30%" > <br> <br>
+    <img src="/imagens/LOGOetec.png" alt="Logo Etec" width="30%" height="30%" class="img" > <br> <br>
     <div class="button">
     <button><a href="http://127.0.0.1:5500/pagina1.html">Voltar</a></button> <br><br>
     <button><a href="http://127.0.0.1:5500/index.html">Inicio</a></button></div>
@@ -130,11 +181,22 @@ select {
    border-width: 100px;
    border-color:darkgray;
     background-color: white;
+
 }
 .logo{
-position: relative;
-top: 100px;
+    position:relative;
+    top: 100px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.img {
+    position: relative;
+    left: 650px;
+}
+
 .button {
     color: black;
 }
